@@ -1,0 +1,58 @@
+// Declaraciones de variables
+int x = 5;
+float y = 3.14;
+int resultado;
+
+// Función de suma
+int suma(int a, int b) {
+    return a + b;
+}
+
+// Función principal
+void main() {
+    // Llamada a función
+    resultado = suma(x, 2);
+
+    // Operaciones aritméticas
+    int a = 10 + 5 * 2;  // Multiplicación antes que suma
+    int a = 3;
+    float b = (4.5 / 1.5) - 2.0;
+
+    // Operaciones lógicas
+    int logico1 = (x > 3) && (y < 4);
+    int logico2 = (x == 5) || (y >= 3.0);
+    int logico3 = !(x < 0);
+
+    // Estructura de control IF con ELSE
+    if (resultado > 5) {
+        x = x + 1;
+    } else {
+        x = x - 1;
+    }
+
+    // Bucle FOR
+    for (int i = 0; i < 5; i = i + 1) {
+        resultado = resultado + i;
+    }
+
+    // Bucle WHILE
+    while (x > 0) {
+        x = x - 1;
+    }
+}
+
+
+/*
+
+✅ Bloques de código {}	{ ... } en main(), if, for, while
+✅ Declaraciones de variables	int x = 5; float y = 3.14;
+✅ Asignaciones	resultado = suma(x, 2);
+✅ Operaciones aritméticas	int a = 10 + 5 * 2;
+✅ Operaciones lógicas	int logico1 = (x > 3) && (y < 4);
+✅ Declaración de función	int suma(int a, int b) { return a + b; }
+✅ Llamada de función	resultado = suma(x, 2);
+✅ Estructura if-else	if (resultado > 5) { ... } else { ... }
+✅ Bucle for	for (int i = 0; i < 5; i = i + 1) { ... }
+✅ Bucle while	while (x > 0) { ... }
+
+*/

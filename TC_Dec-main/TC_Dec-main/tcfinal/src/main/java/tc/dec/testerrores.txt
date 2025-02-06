@@ -1,0 +1,73 @@
+// ERROR: Variable no declarada
+x = 5;  
+
+// ERROR: Doble declaración de variable
+int a = 10;
+int a = 20;
+
+// ERROR: Uso de variable sin inicializar
+int b;
+b = b + 2;  
+
+// ERROR: Falta de punto y coma
+int c = 15  
+
+// ERROR: Falta de apertura de paréntesis en if
+if x > 3) { 
+    c = c + 1;
+}
+
+// ERROR: Falta de cierre de paréntesis en if
+if (x > 3 {  
+    c = c + 1;
+}
+
+// ERROR: Formato incorrecto en declaración de variables
+int 5numero;
+
+// ERROR: Tipos de datos incompatibles
+int d = "texto";  
+float e = 10 / "hola";
+
+// ERROR: Llamada a función no declarada
+resultado = funcionNoExistente(3, 4);
+
+// ERROR: Falta de retorno en función no `void`
+int sinRetorno(int num) { 
+    num = num + 1; 
+}
+
+// ERROR: Falta de apertura de llave en `for`
+for (int i = 0; i < 10; i++) 
+    int x = 0;
+
+// ERROR: Falta de cierre de llave en `while`
+while (b < 10) {
+    b = b + 1;
+
+// ERROR: División por cero en cálculo estático
+int f = 10 / 0;
+
+// ERROR: Uso de operador lógico en aritmética
+int g = 5 && 3 + 2;
+
+// ERROR: Identificador declarado pero no usado
+int noUsado;
+
+
+/*
+❌ Variable no declarada	x = 5;
+❌ Doble declaración de variable	int a = 10; int a = 20;
+❌ Uso de variable sin inicializar	int b; b = b + 2;
+❌ Falta de punto y coma	int c = 15
+❌ Falta de apertura/cierre de paréntesis	if x > 3) { ... }
+❌ Formato incorrecto en declaración	int 5numero;
+❌ Tipos de datos incompatibles	int d = "texto";
+❌ Llamada a función no declarada	resultado = funcionNoExistente(3, 4);
+❌ Falta de retorno en función int	int sinRetorno(int num) { num = num + 1; }
+❌ Falta de llaves en estructuras de control	for (int i = 0; i < 10; i++) int x = 0;
+❌ División por cero en expresión estática	int f = 10 / 0;
+❌ Uso incorrecto de operadores lógicos	int g = 5 && 3 + 2;
+❌ Variable declarada pero no usada	int noUsado;
+
+*/
